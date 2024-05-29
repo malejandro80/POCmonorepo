@@ -8,6 +8,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
 
   return (
     <>
+      <h1>hello from dev</h1>
       <Layout title="Microfrontends" path="solutions/microfrontends">
         <Component {...pageProps} />
       </Layout>
