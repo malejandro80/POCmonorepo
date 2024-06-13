@@ -5,7 +5,7 @@ applications:
       phases:
         preBuild:
           commands:
-            - echo FRONTEND MAIN PREBUILD
+            - echo FRONTEND MAIN PREBUILD HOLA MUNDO
             - cd ../../
             - npm install -g pnpm
             - pnpm install
