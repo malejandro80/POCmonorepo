@@ -1,29 +1,29 @@
 version: 1
 applications:
   - appRoot: apps/docs
-      frontend:
-        phases:
-          preBuild:
-            commands:
-              - echo  --------------------- > package DOCS PREBUILD
-              - npm install -g pnpm
-              - pnpm install
-              - cd ../../
-          build:
-            commands:
-              - echo --------------------- >  DOCS BUILD
-              - pnpm run build
-              - cd apps/docs
-              - ls -la
-        artifacts:
-          baseDirectory: out
-          files:
-            - '**/*'
-        cache:
-          paths:
-            - node_modules
-            - apps/app/node_modules
-            - packages/*/node_modules
+    frontend:
+      phases:
+        preBuild:
+          commands:
+            - echo  --------------------- > package DOCS PREBUILD
+            - npm install -g pnpm
+            - pnpm install
+            - cd ../../
+        build:
+          commands:
+            - echo --------------------- >  DOCS BUILD
+            - pnpm run build
+            - cd apps/docs
+            - ls -la
+      artifacts:
+        baseDirectory: out
+        files:
+          - '**/*'
+      cache:
+        paths:
+          - node_modules
+          - apps/app/node_modules
+          - packages/*/node_modules
   - appRoot: apps/main
     frontend:
       phases:
