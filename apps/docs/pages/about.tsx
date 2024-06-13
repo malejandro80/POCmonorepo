@@ -4,7 +4,8 @@ import Navbar from '@acme/pages/components/navbar'
 export default function About() {
   return (
     <Page>
-      <Navbar isDocsApp />
+      <h2>eeeeeeey</h2>
+      {/* <Navbar isDocsApp />
       <Text variant="h1" className="mb-6">
         About Docs
       </Text>
@@ -23,7 +24,7 @@ export default function About() {
           Home (Multi Zones)
         </a>{' '}
         requires a page refresh because it lives in a different Next.js app.
-      </Text>
+      </Text> */}
     </Page>
   )
 }

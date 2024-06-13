@@ -5,7 +5,8 @@ export default function Index() {
   return (
     <Page>
       <Navbar isDocsApp />
-      <Text variant="h1" className="mb-6">
+      <h2>oeee</h2>
+      {/* <Text variant="h1" className="mb-6">
         hello Docs
       </Text>
       <Text className="mb-4">
@@ -23,7 +24,7 @@ export default function Index() {
           Home (Multi Zones)
         </a>{' '}
         requires a page refresh because it lives in a different Next.js app.
-      </Text>
+      </Text> */}
     </Page>
   )
 }
