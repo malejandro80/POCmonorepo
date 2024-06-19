@@ -12,6 +12,8 @@ applications:
         build:
           commands:
             - echo --------------------- >  DOCS BUILD
+            - echo "DOCS_URL=$DOCS_URL" >> .env
+            - cat .env
             - pnpm run build
             - cd apps/docs
             - ls -la
