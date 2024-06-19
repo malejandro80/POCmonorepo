@@ -12,8 +12,8 @@ applications:
         build:
           commands:
             - echo --------------------- >  DOCS BUILD
-            - echo "DOCS_URL=$DOCS_URL" >> .env
-            - echo $DOCS_URL
+            - echo "NEXT_PUBLIC_DOCS_URL=$NEXT_PUBLIC_DOCS_URL" >> .env
+            - echo $NEXT_PUBLIC_DOCS_URL
             - cat .env
             - pnpm run build
             - cd apps/docs
@@ -39,8 +39,8 @@ applications:
         build:
           commands:
             - cd apps/main
-            - echo "DOCS_URL=$DOCS_URL" >> .env
-            - echo $DOCS_URL
+            - echo "NEXT_PUBLIC_DOCS_URL=$NEXT_PUBLIC_DOCS_URL" >> .env
+            - echo $NEXT_PUBLIC_DOCS_URL
             - cat .env
             - cd ../../
             - pnpm run build

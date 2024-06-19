@@ -14,7 +14,7 @@ export default function Home(): React.ReactNode {
   }
 
   useEffect(changeColor, [])
-
+  console.log('env', process.env.NEXT_PUBLIC_DOCS_URL)
   return (
     <Page>
       <Navbar />

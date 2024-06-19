@@ -1,5 +1,5 @@
-const { DOCS_URL } = process.env
-console.log({ DOCS_URL })
+const { NEXT_PUBLIC_DOCS_URL } = process.env
+console.log({ NEXT_PUBLIC_DOCS_URL })
 module.exports = {
   async rewrites() {
     return [
@@ -9,7 +9,7 @@ module.exports = {
 
       {
         source: '/docs/:path*',
-        destination: `${DOCS_URL}/:path*`,
+        destination: `${NEXT_PUBLIC_DOCS_URL}/:path*`,
       },
     ]
   },
