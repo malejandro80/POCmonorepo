@@ -13,7 +13,7 @@ applications:
           commands:
             - echo --------------------- >  DOCS BUILD
             - echo "DOCS_URL=$DOCS_URL" >> .env
-            - echo $DOCS_URL 
+            - echo $DOCS_URL
             - cat .env
             - pnpm run build
             - cd apps/docs
@@ -38,9 +38,11 @@ applications:
             - pnpm install
         build:
           commands:
+            - cd apps/main
             - echo "DOCS_URL=$DOCS_URL" >> .env
-            - echo $DOCS_URL 
+            - echo $DOCS_URL
             - cat .env
+            - cd ../../
             - pnpm run build
             - cd apps/main
             - ls -la
@@ -51,4 +53,3 @@ applications:
       cache:
         paths:
           - node_modules
-  
