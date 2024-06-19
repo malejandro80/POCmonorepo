@@ -38,7 +38,9 @@ applications:
             - pnpm install
         build:
           commands:
-            - echo FRONTEND MAIN BUILD
+            - echo "DOCS_URL=$DOCS_URL" >> .env
+            - echo $DOCS_URL 
+            - cat .env
             - pnpm run build
             - cd apps/main
             - ls -la
