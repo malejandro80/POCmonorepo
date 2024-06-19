@@ -12,9 +12,6 @@ applications:
         build:
           commands:
             - echo --------------------- >  DOCS BUILD
-            - echo "NEXT_PUBLIC_DOCS_URL=$NEXT_PUBLIC_DOCS_URL" >> .env
-            - echo $NEXT_PUBLIC_DOCS_URL
-            - cat .env
             - pnpm run build
             - cd apps/docs
             - ls -la
