@@ -13,6 +13,7 @@ applications:
           commands:
             - echo --------------------- >  DOCS BUILD
             - echo "DOCS_URL=$DOCS_URL" >> .env
+            - echo $DOCS_URL 
             - cat .env
             - pnpm run build
             - cd apps/docs
